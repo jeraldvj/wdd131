@@ -2,20 +2,20 @@ body {
     margin: 0;
     padding: 0;
     background-color: #ffffff;
-    color: #111; 
-    font-family: Georgia, serif;
+    color: #000000; 
+    font-family: Times New Roman, Times, serif;
 }
 
 .content {
     width: 612px;
-    height: 620px;
+    height: 600px;
     margin: 13px auto;
     border: 1px solid #c8c8c8;
     position: relative;
 }
 
 .title {
-    width: 430px;
+    width: 380px;
     margin: 60px auto;
 }
 
@@ -77,6 +77,6 @@ img {
     width: 100px;
     position: absolute;
     left: 50%;
-    bottom: 60px;
+    bottom: 35px;
     transform: translateX(-50%);
 }

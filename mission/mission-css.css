@@ -30,7 +30,7 @@ h1 {
 .caption {
     margin-top: 16px;
     text-align: center;
-    color: #1976bd;
+    color: #006EB6;
     font-size: 10px;
     font-weight: bold;
     letter-spacing: 3px;
@@ -79,4 +79,21 @@ img {
     left: 50%;
     bottom: 35px;
     transform: translateX(-50%);
+}
+
+.dark {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.dark .content {
+    border-color: #ffffff;
+}
+
+.dark .caption {
+    color: #A6D8F0;
+}
+
+.dark hr {
+    border-top-color: #ffffff;
 }

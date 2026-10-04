@@ -1,0 +1,102 @@
+/* General styles */
+
+body {
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    background-color: #ccc;
+}
+
+header {
+    background-color: #2f80ed;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    padding: 15px 10px;
+    font-size: 1.5rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 8px 0;
+}
+
+.menu-button {
+    width: 100%;
+    border: none;
+    background-color: #2f80ed;
+    color: white;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+nav ul {
+    display: none;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    justify-items: center;
+}
+
+.gallery img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid white;
+    box-shadow: 0 0 5px #555;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #2f80ed;
+    color: white;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+@media screen and (min-width: 700px) {
+
+    .gallery {
+        grid-template-columns: repeat(2, 200px);
+        justify-content: center;
+        gap: 10px;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+    .gallery {
+        grid-template-columns: repeat(3, 180px);
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        list-style: none;
+        margin: 0;
+        padding: 8px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 0.7rem;
+    }
+
+}

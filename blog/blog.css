@@ -1,0 +1,174 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 1rem;
+    line-height: 1.5;
+    color: #111;
+}
+
+.page {
+    max-width: 1200px;
+    margin: 1rem auto;
+    border: 2px solid #111;
+}
+
+header {
+    padding: 0.5rem;
+}
+
+h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #381b32;
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0.5rem 0 1rem;
+    border-bottom: 1px solid #efa66b;
+}
+
+.main-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    justify-content: end;
+    list-style: none;
+    padding: 0.7rem 0;
+    margin: 0;
+    border-bottom: 1px solid #efa66b;
+}
+
+.main-nav a {
+    color: #b00020;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+    text-decoration: underline;
+}
+
+a:focus-visible {
+    outline: 2px solid #333;
+    outline-offset: 3px;
+}
+
+main {
+    padding: 1rem 0.5rem;
+}
+
+.book-review {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+.details {
+    text-align: right;
+    border-bottom: 1px solid #efa66b;
+    padding: 0 1rem 1rem;
+    font-size: 0.9rem;
+}
+
+.details p {
+    margin: 0.5rem 0;
+}
+
+.rating {
+    color: #996800;
+    font-size: 1.2rem;
+    letter-spacing: -0.1rem;
+}
+
+.review-content {
+    padding: 0 1rem;
+}
+
+.review-content h2 {
+    color: #b00020;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    margin-top: 0;
+}
+
+.review-content img {
+    display: block;
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto;
+}
+
+.review-content p {
+    font-size: 0.95rem;
+    margin-top: 1rem;
+}
+
+footer {
+    border-top: 1px solid #efa66b;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Larger screens */
+@media (min-width: 700px) {
+    .page {
+        margin: 2rem auto;
+    }
+
+    header {
+        padding: 0.5rem;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    .main-nav {
+        grid-template-columns: repeat(3, 60px);
+        padding: 0.6rem 1rem;
+    }
+
+    .main-nav a {
+        font-size: 0.8rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .book-review {
+        grid-template-columns: 1fr 2fr;
+        gap: 1.5rem;
+        padding: 1rem 0;
+    }
+
+    .details {
+        border-bottom: none;
+        border-right: 1px solid #efa66b;
+        padding: 0 1.5rem 0 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .review-content {
+        padding: 0 0.5rem;
+    }
+
+    .review-content h2 {
+        font-size: 1.1rem;
+    }
+
+    .review-content img {
+        margin: 0.5rem auto;
+    }
+
+    .review-content p {
+        font-size: 0.8rem;
+    }
+}

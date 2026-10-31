@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Event Ticket Form</title>
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="eventform.css">
+    <script src="eventform.js" defer></script>
+</head>
+
+<body>
+
+    <main class="wrapper">
+
+        <h1>Event Ticket</h1>
+
+        <form id="ticketForm">
+
+            <div class="field">
+                <label for="firstName">First Name</label>
+                <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    autocomplete="given-name"
+                    required
+                >
+            </div>
+
+            <div class="field">
+                <label for="lastName">Last Name</label>
+                <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    autocomplete="family-name"
+                    required
+                >
+            </div>
+
+            <div class="field full">
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                >
+            </div>
+
+            <div class="field">
+                <label for="type">Type</label>
+                <select
+                    id="type"
+                    name="type"
+                    aria-controls="codeContainer"
+                    aria-expanded="false"
+                    required
+                >
+                    <option value="">Choose one</option>
+                    <option value="student">Student</option>
+                    <option value="guest">Guest</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="date">Event Date</label>
+                <input
+                    type="date"
+                    id="date"
+                    name="date"
+                    required
+                >
+            </div>
+
+            <div id="codeContainer" class="field full" hidden>
+                <label for="code" id="codeLabel">Student I#</label>
+                <input
+                    type="text"
+                    id="code"
+                    name="code"
+                >
+            </div>
+
+            <button class="full" type="submit">
+                Get Ticket
+            </button>
+
+        </form>
+
+        <section
+            id="output"
+            aria-live="polite"
+            aria-atomic="true"
+        ></section>
+
+    </main>
+
+</body>
+</html>

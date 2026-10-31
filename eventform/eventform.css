@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 25px 15px;
+    color: #111111;
+}
+
+.wrapper {
+    max-width: 520px;
+    margin: 35px auto;
+    padding: 12px;
+    background-color: #b8ccd8;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 22px;
+    margin: 0;
+    padding: 12px 15px;
+    background-color: #ffffff;
+    color: #111111;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 12px 15px 15px;
+    background-color: #ffffff;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 0;
+}
+
+label {
+    font-size: 14px;
+    font-weight: normal;
+    color: #222222;
+}
+
+.full {
+    grid-column: 1 / -1;
+}
+
+input,
+select {
+    width: 100%;
+    min-width: 0;
+    min-height: 40px;
+    padding: 9px 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border: 1px solid #b8b8b8;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #111111;
+}
+
+input:focus-visible,
+select:focus-visible {
+    outline: 2px solid #526f82;
+    outline-offset: 2px;
+}
+
+button {
+    width: 100%;
+    min-height: 40px;
+    padding: 10px;
+    margin-top: 3px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #a5b7c1;
+    border-radius: 4px;
+    background-color: #9fb6c5;
+    color: #111111;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d2e0e8;
+}
+
+button:focus-visible {
+    outline: 2px solid #526f82;
+    outline-offset: 3px;
+}
+
+#codeContainer[hidden] {
+    display: none;
+}
+
+#output {
+    margin-top: 0;
+    padding: 5px 15px 15px;
+    background-color: #ffffff;
+    font-size: 14px;
+    color: #111111;
+}
+
+#output h2 {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+#output p {
+    margin: 7px 0;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    .wrapper {
+        width: 100%;
+        margin: 15px auto;
+        padding: 8px;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 12px 10px;
+    }
+
+    .full {
+        grid-column: 1 / -1;
+    }
+
+    h1 {
+        font-size: 20px;
+        padding: 12px 10px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    input,
+    select,
+    button {
+        font-size: 14px;
+    }
+}

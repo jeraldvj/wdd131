@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Meet Snortleblat, a swamp beast diplomat. Explore his character stats, attack him, and level him up.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Snortleblat - Character Card">
+    <meta property="og:description" content="Meet Snortleblat, the Swamp Beast Diplomat.">
+    <meta property="og:url" content="https://jeraldvj.github.io/wdd131/charactercard/">
+    <meta property="og:image" content="https://jeraldvj.github.io/wdd131/charactercard/images/social-preview.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Snortleblat - Character Card">
+    <meta name="twitter:description" content="Meet Snortleblat, the Swamp Beast Diplomat.">
+    <meta name="twitter:image" content="https://jeraldvj.github.io/wdd131/charactercard/images/social-preview.jpg">
+
+    <title>Character Card</title>
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="charactercard.css">
+    <script src="charactercard.js" defer></script>
+</head>
+
+<body>
+
+    <main>
+        <section class="card">
+
+            <img id="characterImage" class="image"
+                src="images/snortleblat.webp"
+                alt="Snortleblat, a swamp beast diplomat">
+
+            <h1 id="characterName" class="name"></h1>
+
+            <div class="stats">
+                <p>Class: <span id="characterClass"></span></p>
+                <p>Level: <span id="characterLevel"></span></p>
+                <p>Health: <span id="characterHealth"></span></p>
+            </div>
+
+            <div class="buttons">
+                <button id="attackButton" type="button">Attacked</button>
+                <button id="levelUpButton" type="button">Level Up</button>
+            </div>
+
+            <p id="characterMessage" aria-live="polite"></p>
+
+        </section>
+    </main>
+
+</body>
+</html>
